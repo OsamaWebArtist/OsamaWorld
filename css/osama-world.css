@@ -1651,6 +1651,7 @@ z-index: -1;
     font-size: 35px;
     color: var(--first-color-blue);
     font-weight: bold;
+    display: flex;
 }
 .AllTime span{
     border: 1px solid var(--second-color-softgray);
@@ -1659,6 +1660,10 @@ z-index: -1;
     border-top-right-radius: 5px;
     min-width: 50px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .allDays{
