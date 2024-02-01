@@ -1657,6 +1657,8 @@ z-index: -1;
     padding: 30px 15px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    min-width: 50px;
+    text-align: center;
 }
 
 .allDays{
