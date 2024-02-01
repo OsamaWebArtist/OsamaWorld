@@ -15,7 +15,7 @@ window.onscroll = function () {
 
 /***************************count Down Time************************* */
 
-let datecountDown = new Date("Dec 31,2023 23:59:59").getTime();
+let datecountDown = new Date("Dec 31,2024 23:59:59").getTime();
 console.log(datecountDown);
 
 let daterightNow = new Date().getTime();

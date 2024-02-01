@@ -47,7 +47,9 @@ ul{
     }
 }
 /*End Globale Rules*/
-
+.landing-page-osama-world{
+    overflow: hidden;
+}
 /*start head*/
 .header{
     background: white;
@@ -63,11 +65,7 @@ ul{
     position: relative;
 
 }
-@media (max-width:767px){
-    .header .container{
-        min-height: 169px;
-    }
-}
+
 .header .container h2{
 color: var(--first-color-blue);
 }
@@ -84,6 +82,21 @@ color: var(--first-color-blue);
             align-items: center;    
             font-size: 35px;
 
+        }
+        .header .container ul{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            z-index: 5;
+        }
+        .header .container ul > li {
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        .header .other-links {
+            padding: 0;
+            left: -50%;
         }
     }
 
@@ -194,16 +207,11 @@ header .container ul > li > a:hover{
     padding-bottom: 30px;
 }
 @media (max-width:991px) {
-    .header .other-links > div a{
-        min-width: 180px;
-    }
+
 }
 
 @media (max-width:767px) {
-    .header .other-links > div a{
-        display: flex;
 
-    }
     .header .other-links{
         justify-content: center;
         align-items: flex-start;
@@ -1195,6 +1203,12 @@ z-index: -1;
         padding-right: 10px;
         color: var(--first-color-blue);
 }
+
+@media (max-width:767px){
+    .services .container .theBox{
+        width: 100%;
+    }
+}
 /*End Services */
 
 /*Start skills*/
@@ -1394,6 +1408,49 @@ z-index: -1;
     position: absolute;
     top: -5px;
 }
+
+@media (max-width:767px){
+    .skills .container .imgOf{
+        display: none;
+    }
+    .skills .container .Theskills{
+        width: 100%;
+    }
+
+    .Theskills > div:first-child::before{
+        right: 0;
+    }
+    .Theskills > div:nth-child(2)::before{
+        right: 0;
+    }
+    .Theskills > div:nth-child(3)::before{
+        right: 0;
+    }
+    .Theskills > div:last-child::before{
+        right: 0;
+    }
+
+    .htmlP{
+        width: 100%;
+
+        
+    }
+
+    
+    .Theskills div:nth-child(2) div{
+        width: 100%;
+    }
+
+    
+    .Theskills div:nth-child(3) div{
+        width: 100%;
+    }
+
+    
+    .Theskills div:nth-child(4) div{
+        width: 100%;
+    }
+}
 /*End skills*/
 
 /*how it works*/
@@ -1470,7 +1527,6 @@ width: 50%;
     margin-bottom: 20px;
     background-color: #f8f8f8;
     border-radius: 5px;
-    height: 170px;
     padding: 10px;
     border: 1px solid white;
     position: relative;
@@ -1510,6 +1566,16 @@ width: 50%;
 .boxwork div p{
     line-height: 1.6;
     color: #a9a8a8;
+}
+
+@media (max-width :767px) {
+    .How-It-Works .container  .imag-work{
+        display: none;
+    }
+    .allboxwork{
+        width: 100%;
+    }
+
 }
 /* end how it works*/
 
@@ -1681,16 +1747,9 @@ z-index: -1;
 .YourEmail input{
     border: none;
     border-radius: 50px;
-    width: 350px;
-    height: 50px;
+    padding: 20px 10 ;
 }
-.YourEmail input{
-    border: none;
-    border-radius: 50px;
-    width: 350px;
-    height: 50px;
-    padding-left: 15px;
-}
+
 .YourEmail button{
     border: none;
     border-radius: 50px;
@@ -1711,6 +1770,34 @@ z-index: -1;
 }
 .YourEmail input::placeholder {
     display: none;
+}
+
+@media (max-width :767px) {
+    .latest-event .container img{
+        display: none;
+    }
+    .latest-event .container .PartTime .AllTime{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .PartTime .AllTime span{
+        margin: 10px;
+    }
+
+    .YourEmail {
+        DISPLAY: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .YourEmail input {
+        padding: 20px 10px;
+        width: 100%;
+    }
+    .YourEmail button {
+        margin-top: 10px;
+    }
 }
 /*End Lastest Event*/
 
